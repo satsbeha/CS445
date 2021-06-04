@@ -5,3 +5,4 @@
   [Lab4](.LAB4)
   [Lab5](.LAB5)
   [Lab6](.LAB6)
+  [Lab7](./LAB7/Lab7.md)
