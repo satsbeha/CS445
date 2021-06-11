@@ -1,3 +1,4 @@
+/*
 var fibonacci = (function() {
     var memo = {};
 
@@ -22,3 +23,29 @@ var fibonacci = (function() {
 })();
 
 console.log(fibonacci(8));
+*/
+
+var factorial = (function() {
+    var memo = {};
+
+    function f(n) {
+        var value;
+
+        if (n in memo) {
+            value = memo[n];
+        } else {
+            if (n === 0 || n === 1)
+                value = n;
+            else
+                value = f(n - 1) *n;
+
+            memo[n] = value;
+        }
+
+        return value;
+    }
+
+    return f;
+})();
+
+console.log(factorial(5));
